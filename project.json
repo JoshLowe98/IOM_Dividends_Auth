@@ -1,0 +1,80 @@
+{
+  "name": "Dividends Work Authorise",
+  "description": "Dividends Work",
+  "main": "Dividends Authorise - State Machine Work.xaml",
+  "dependencies": {
+    "AdvancedConversion.Activities": "[1.0.1]",
+    "UiPath.Excel.Activities": "[2.16.2]",
+    "UiPath.Mail.Activities": "[1.12.3]",
+    "UiPath.MicrosoftOffice365.Activities": "[2.2.7]",
+    "UiPath.System.Activities": "[22.10.4]",
+    "UiPath.UIAutomation.Activities": "[22.10.3]",
+    "UiPath.WebAPI.Activities": "[1.13.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.4.1.0",
+  "projectVersion": "1.2.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "General Arrears Letters - State Machine Work V1.xaml",
+      "uniqueId": "92edb968-b698-41a6-8422-c43f7c412cbe",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "UW UL Switch Redirections - State Machine Work.xaml",
+      "uniqueId": "ddf5d35b-052d-49eb-8c12-6c0bd941a756",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "ACM - State Machine Work.xaml",
+      "uniqueId": "b3951116-020e-4ce8-88fc-873fe05a07a8",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Dividends Authorise - State Machine Work.xaml",
+      "uniqueId": "e8b0b8ab-e66e-4386-8a81-112ae724b3a0",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
