@@ -12,7 +12,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1500,6672</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1402,6141</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="68">
@@ -122,7 +122,7 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Component Name: Open BaNCS" DisplayName="Component" sap:VirtualizedContainerService.HintSize="1510,6607" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Component Name: Open BaNCS" DisplayName="Component" sap:VirtualizedContainerService.HintSize="1412,6076" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Opening BaNCS" Name="strComponentName" />
       <Variable x:TypeArguments="x:String" Name="strBancsURL" />
@@ -134,20 +134,20 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1448,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strComponentName + &quot;: Start&quot;]" />
-    <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="1448,6202" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1350,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strComponentName + &quot;: Start&quot;]" />
+    <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="1350,5671" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="strUsername" />
         <Variable x:TypeArguments="ss:SecureString" Name="strPassword" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1410,5974" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap:VirtualizedContainerService.HintSize="1312,5443" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Pre Condition" sap:VirtualizedContainerService.HintSize="1348,103" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Pre Condition" sap:VirtualizedContainerService.HintSize="1250,103" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolPreConditionExists" />
             </Sequence.Variables>
@@ -157,7 +157,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Sequence>
-          <Sequence DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="1348,4814" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <Sequence DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="1250,4283" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strPowershellScript" />
             </Sequence.Variables>
@@ -167,7 +167,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="1286,61" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign sap:VirtualizedContainerService.HintSize="1188,61" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[strBancsURL]</OutArgument>
               </Assign.To>
@@ -175,32 +175,32 @@
                 <InArgument x:TypeArguments="x:String">[DiConfig("BancsURL").ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1286,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[strBancsURL]" />
-            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1286,133" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome.exe" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1286,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Killed Chrome Process&quot;]" />
-            <ui:ReadTextFile File="{x:Null}" Content="[strPowershellScript]" DisplayName="Read Cache Powrshell Script" FileName="[DiConfig(&quot;Powershell Script&quot;).ToString]" sap:VirtualizedContainerService.HintSize="1286,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-            <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[strPowershellScript]" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="1286,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1188,92" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[strBancsURL]" />
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1188,133" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome.exe" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1188,92" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Killed Chrome Process&quot;]" />
+            <ui:ReadTextFile File="{x:Null}" Content="[strPowershellScript]" DisplayName="Read Cache Powrshell Script" FileName="[DiConfig(&quot;Powershell Script&quot;).ToString]" sap:VirtualizedContainerService.HintSize="1188,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+            <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[strPowershellScript]" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="1188,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True">
               <ui:InvokePowerShell.PowerShellVariables>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:InvokePowerShell.PowerShellVariables>
             </ui:InvokePowerShell>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1286,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Resetting Cache, Browser Data etc&quot;]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1286,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Opening Chrome&quot;]" />
-            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1286,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open BANCS" sap:VirtualizedContainerService.HintSize="1286,3551" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Timeout="[IntDefaultTimeoutS]" Version="V1" WindowResize="Maximize">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1188,92" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Resetting Cache, Browser Data etc&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1188,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Opening Chrome&quot;]" />
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1188,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open BANCS" sap:VirtualizedContainerService.HintSize="1188,3020" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Timeout="[IntDefaultTimeoutS]" Version="V1" WindowResize="Maximize">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1252,3334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1154,2803" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1190,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Opened Chrome&quot;]" />
-                    <ui:GetRobotCredential AssetName="BancsCredentials" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1190,365" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[strPassword]" Username="[strUsername]">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1092,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Opened Chrome&quot;]" />
+                    <ui:GetRobotCredential AssetName="BancsCredentials" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1092,365" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[strPassword]" Username="[strUsername]">
                       <ui:GetRobotCredential.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:GetRobotCredential.TimeoutMS>
@@ -211,16 +211,16 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:GetRobotCredential>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1190,92" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Got Credentials&quot;]" />
-                    <uix:NCheckState DisplayName="Check App State 'Username'" sap:VirtualizedContainerService.HintSize="1190,2550" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Timeout="[IntDefaultTimeoutL]" Version="V1">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1092,92" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Got Credentials&quot;]" />
+                    <uix:NCheckState DisplayName="Check App State 'Username'" sap:VirtualizedContainerService.HintSize="1092,2019" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Timeout="[IntDefaultTimeoutL]" Version="V1">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="736,2333" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="638,1802" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="674,62" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign sap:VirtualizedContainerService.HintSize="576,62" sap2010:WorkflowViewState.IdRef="Assign_7">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Boolean">[boolBancsLogIn]</OutArgument>
                             </Assign.To>
@@ -228,50 +228,15 @@
                               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[boolBancsLogIn = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="674,2116" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                          <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[boolBancsLogIn = False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="576,1585" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                             <ui:InterruptibleDoWhile.Body>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="638,1950" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1419" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[DiConfig(&quot;MODE&quot;).ToString.ToUpper = &quot;TEST&quot;]" sap:VirtualizedContainerService.HintSize="576,451" sap2010:WorkflowViewState.IdRef="If_4">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="400,172" sap2010:WorkflowViewState.IdRef="Sequence_19">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_8">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:String">[strUsername]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[strUsername]</InArgument>
-                                        </Assign.Value>
-                                      </Assign>
-                                    </Sequence>
-                                  </If.Then>
-                                  <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="400,103" sap2010:WorkflowViewState.IdRef="Sequence_20">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                    </Sequence>
-                                  </If.Else>
-                                </If>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="576,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Typed in Username &quot; + strUsername]" />
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="576,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Text="[strUsername]" Timeout="[IntDefaultTimeoutL]" Version="V1">
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="478,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Text="[strUsername]" Timeout="[IntDefaultTimeoutL]" Version="V1">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable DesignTimeRectangle="894, 199, 214, 36" ElementType="InputBox" FriendlyName="'editable text Username'" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Username' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Username' role='editable text' automationid='' /&gt;" Guid="733e1562-9c0d-43a4-8d31-b8d013c7122f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANoAAAAoCAYAAACYR+TJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALCSURBVHhe7d3LS1RRHMDx/pNpRtsLis44D9O0trU3i8qssFrkq0wsykgIn/lKMsNHag+jkMpc9I4ggqxo0a5IijYFRY/NL89Pvc3tanlJz6bv4rM4554zuy93xoW/FYFAQAAsrwVDy4qvlU276+Rg81Xpvj4lQw9/APiNaaO66YoUlR6VrFjBvC0ZntBCKamy80CbDN7/Nu8HA5ifaWZHVasEQymupgxXaBmRPGm58FIv9d36KBV1PVJYXCbhaI7rEoAZpg3TSOWxXum//UnbaRyalPTwatc5J7SU1FXSNvpKD3ZcfCrReJ7rIIA/i+XkS+foc23ItJT8ZnNCK605NRvZpPMQgH/mRWVa2lXd4expaImC9XLuwXf9uhiJuV95APyJJvKkb/prpGkqUbBB9zS0/Q2XtcCahvOeSwD8q22+pE2V14/oWkM7MfBEN7eU1nguAPBv655abar+7CNda2g9Nz/oZjSR77kAwL947jpt6vSNd7rW0MyGkXwQwL9J7orQgGVCaIAFhAZYQGiABYQGWEBogAWEBlhAaIAFhAZYQGiABYQGWEBogAWEBlhAaIAFhAZYQGiABYQGWEBogAWEBljgCa372lvdyOa/EwNLIppYo02ZtsxaQzvcOaGbhdv2eS4A8K+opEKbOtQ+rmsNraSyRTfLjnR7LgDwzwyIMU0VlzfqWkNLy4hK/53PcmZ8SjLD2Z5LABYvEk1I78R7Gbj7RdLSZ3rS0IzNe49rgSdHHrsuAfCnfXbIhRnkObfnhBYMhaRpeGbkjJmGEZv+MTf3DMDfxXPynUkyTSMvZGUw6DxzQjMyIrlObK5BhNkJ5wyAX8xfFzduL9dBhKYZ007j8DNJz3IP73SFZpjhaSVVrYzWBXwavPd1caN1k4WThsV3jb2Z94OB/13X2GttxLSSGVt4SMyCoQFYKgH5CURQFXY7qpgrAAAAAElFTkSuQmCC" InformativeScreenshot="ed2f83d87c884d6a78b7fd5d61374ea2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='sitimvmapp019.ad.utmostgroup.com:8003/Bancs/ - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector">
                                       <uix:TargetAnchorable.Anchors>
@@ -288,8 +253,26 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NTypeInto>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="576,92" sap2010:WorkflowViewState.IdRef="LogMessage_16" Message="[&quot;Password :&quot;+new System.Net.NetworkCredential(string.Empty,strPassword).Password]" />
-                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="576,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" SecureText="[strPassword]" Timeout="[IntDefaultTimeoutL]" Version="V1">
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Typed in Username &quot; + strUsername]" />
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,203" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_16" Message="[&quot;Password :&quot;+new System.Net.NetworkCredential(string.Empty,strPassword).Password]" />
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="478,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" SecureText="[strPassword]" Timeout="[IntDefaultTimeoutL]" Version="V1">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable DesignTimeRectangle="894, 247, 214, 36" ElementType="InputBoxPassword" FriendlyName="'editable text Password'" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Password' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Password' role='editable text' automationid='' /&gt;" Guid="90e8a751-bb93-4323-af65-be8924d46db5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANoAAAAoCAYAAACYR+TJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHYSURBVHhe7d05jsJAEEbhOQlGRGwJywGADHIgBbFkQOjj1+i3xgjTNYjFVPSCL3N39uRWWyr/ZFlmAL6L0IAAD0ObTqe2Xq/teDzadru1PM8B/FETakONqBWvoZIbWq/Xs8PhYPP5vNhgMBhYq9UCcEdtqBG1st/vrdvtWqPRSJqqhKYH+v2+nU4nGw6H7sYAfGpG7aih+9gqoelNpge9TQA853w+F2+227auoTWbzeK4yJsM+MxoNCqOkW5os9msOGd6CwG8ZrFYVC5IrqGVNyfeIgCvUUur1SoNTdeU3C4C9VBLaioJTd8EvAUA3rPZbNLQ9AHOexjAe9QUoQFfRmhAAEIDAhAaEIDQgACEBgQgNCAAoQEBCA0IQGhAAEIDAhAaEIDQgACEBgQgNCAAoQEBCA0I4IbGKAOgXu4oA4bzAPX5dziPRmMxbg6oh+akLpfLNLRyUL+3CMBrNEB1MpmkoWkkuMYYMxIc+Mx4PLbdblc0lYQmGsyvAf3eYgDPUUOdTufalVRCk/KPMhrU720CwKc32eVySf4kI0loogd1jCwH9XMbCfjUhi4+1IqOi+12O+lJ3NBK5aB+/c6JX+sCVWpCbeh28fbiw/MwNAD1IDTg6zL7BXvQNC+P+2ysAAAAAElFTkSuQmCC" InformativeScreenshot="c85484dca647be156676dc7c1215c4f0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='sitimvmapp019.ad.utmostgroup.com:8003/Bancs/ - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector">
                                       <uix:TargetAnchorable.Anchors>
