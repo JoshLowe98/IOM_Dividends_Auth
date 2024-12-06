@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="BoolSuccess" Type="OutArgument(x:Boolean)" />
     <x:Property Name="StrExceptionMessage" Type="OutArgument(x:String)" />
@@ -18,10 +18,10 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1820,6827</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1820,7509</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="53">
+    <scg:List x:TypeArguments="x:String" Capacity="55">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -75,10 +75,12 @@
       <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
       <x:String>UiPath.Shared.Activities.Utils</x:String>
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Dynamic</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="72">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -148,9 +150,11 @@
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Component Name: Exception Handling&#xA;Description: Find the component that generated the exception.&#xA;Pre Condition:&#xA;Post Condition: " DisplayName="Component" sap:VirtualizedContainerService.HintSize="1830,6762" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Component Name: Exception Handling&#xA;Description: Find the component that generated the exception.&#xA;Pre Condition:&#xA;Post Condition: " DisplayName="Component" sap:VirtualizedContainerService.HintSize="1830,7444" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Exception Handling" Name="strComponentName" />
       <Variable x:TypeArguments="x:String" Name="strPassingFlowchart" />
@@ -175,9 +179,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1768,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strComponentName + &quot;: Start&quot;]" />
-    <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="1768,6316" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="1768,6998" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1730,6088" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap:VirtualizedContainerService.HintSize="1730,6770" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="strUser" />
           </Sequence.Variables>
@@ -202,7 +206,7 @@
               </If.Then>
             </If>
           </Sequence>
-          <Sequence DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="1668,4659" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="1668,5341" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="StrEmailSwitch" />
             </Sequence.Variables>
@@ -211,7 +215,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Get Exception Details" sap:VirtualizedContainerService.HintSize="622,1593" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Get Exception Details" sap:VirtualizedContainerService.HintSize="1606,1593" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="ui:Image" Name="ExceptionScreenshot" />
                 <Variable x:TypeArguments="x:String" Name="strDateTime" />
@@ -426,7 +430,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Switch>
-            <If Condition="[StrAction = &quot;retry&quot;]" sap:VirtualizedContainerService.HintSize="1606,3153" sap2010:WorkflowViewState.IdRef="If_20">
+            <If Condition="[StrAction = &quot;retry&quot;]" sap:VirtualizedContainerService.HintSize="1606,3505" sap2010:WorkflowViewState.IdRef="If_20">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -434,13 +438,23 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="1528,2874" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                <Sequence sap:VirtualizedContainerService.HintSize="1528,3226" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="strPowershellScript" />
+                  </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1466,133" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome.exe" />
+                  <ui:ReadTextFile File="{x:Null}" Content="[strPowershellScript]" DisplayName="Read Cache Powrshell Script" FileName="[DiConfig(&quot;Powershell Script&quot;).ToString]" sap:VirtualizedContainerService.HintSize="1466,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                  <ui:InvokePowerShell x:TypeArguments="sma:PSObject" ContinueOnError="{x:Null}" CommandText="[strPowershellScript]" DisplayName="Invoke Power Shell" sap:VirtualizedContainerService.HintSize="1466,60" sap2010:WorkflowViewState.IdRef="InvokePowerShell`1_1" IsScript="True">
+                    <ui:InvokePowerShell.PowerShellVariables>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokePowerShell.PowerShellVariables>
+                  </ui:InvokePowerShell>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1466,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Exception occured. Retrying. Resetting Cache, Browser Data etc&quot;]" />
                   <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Open BANCS" sap:VirtualizedContainerService.HintSize="1466,2590" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="7e11dcda-fc73-480d-b4d9-ec5fc4af980f" Version="V1" WindowResize="Maximize">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
