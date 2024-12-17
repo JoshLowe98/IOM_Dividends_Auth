@@ -178,7 +178,7 @@
               <InArgument x:TypeArguments="x:String">Success</InArgument>
             </Assign.Value>
           </Assign>
-          <Flowchart sap:VirtualizedContainerService.HintSize="2622,811" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+          <Flowchart sap:VirtualizedContainerService.HintSize="2236,811" sap2010:WorkflowViewState.IdRef="Flowchart_1">
             <Flowchart.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolNavigateSuccess" />
               <Variable x:TypeArguments="x:Boolean" Name="boolValidateSuccess" />
@@ -208,7 +208,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">550,221 550,271</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Throw DisplayName="Throw AE" Exception="[New Exception(&quot;Failed to check for duplicates, Reason: &quot; &amp; StrFailureMessage)]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Throw_27">
+              <Throw DisplayName="Throw AE" Exception="[New Exception(&quot;Failed to authorise dividend, Reason: &quot; &amp; StrFailureMessage)]" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="Throw_27">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -275,37 +275,21 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Dividends - Authorize Cash Proceeds.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="375,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Screens\Dividends - Authorize Cash Proceeds.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <OutArgument x:TypeArguments="x:Boolean" x:Key="BoolSuccess">
-                    <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="boolInputSuccess" />
-                  </OutArgument>
-                  <OutArgument x:TypeArguments="x:String" x:Key="StrExceptionMessage">
-                    <VisualBasicReference x:TypeArguments="x:String" ExpressionText="StrFailureMessage" />
-                  </OutArgument>
-                  <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultTimeoutL">
-                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="IntDefaultTimeoutL" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultTimeoutS">
-                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="IntDefaultTimeoutS" />
-                  </InArgument>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="BoolSuccess">[boolInputSuccess]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="StrExceptionMessage">[StrFailureMessage]</OutArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultTimeoutL">[IntDefaultTimeoutL]</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultTimeoutS">[IntDefaultTimeoutS]</InArgument>
                   <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultDelay" />
                   <InArgument x:TypeArguments="x:Int32" x:Key="IntMaxTimeoutLoops" />
                   <InArgument x:TypeArguments="x:TimeSpan" x:Key="TspnDefaultTimespanDelay" />
-                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="DiRow">
-                    <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="DiRow" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="DiConfig">
-                    <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="DiConfig" />
-                  </InArgument>
-                  <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultDelayS">
-                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="IntDefaultDelayS" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="DiRow">[DiRow]</InArgument>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="DiConfig">[DiConfig]</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="IntDefaultDelayS">[IntDefaultDelayS]</InArgument>
                   <InOutArgument x:TypeArguments="x:String" x:Key="StrTransactionStatus" />
                   <InOutArgument x:TypeArguments="ui:QueueItem" x:Key="TiTransactionItem" />
                   <InArgument x:TypeArguments="x:String" x:Key="StrTransactionRefNo" />
                   <InOutArgument x:TypeArguments="x:String" x:Key="StrACReference" />
-                  <InArgument x:TypeArguments="x:Int32" x:Key="IntNumOfRetries">
-                    <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="IntNumOfRetries" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="IntNumOfRetries">[IntNumOfRetries]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
