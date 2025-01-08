@@ -19,7 +19,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1254,18370</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254,19298</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
@@ -124,7 +124,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Component Name: Monitored " DisplayName="Component" sap:VirtualizedContainerService.HintSize="1264,18305" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Component Name: Monitored " DisplayName="Component" sap:VirtualizedContainerService.HintSize="1264,19233" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Dividends -  Authorize Cash Proceeds" Name="strComponentName" />
       <Variable x:TypeArguments="x:String" Name="strPopUpText" />
@@ -141,9 +141,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1202,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strComponentName + &quot;: Start&quot;]" />
-    <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="1202,17899" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try catch" sap:VirtualizedContainerService.HintSize="1202,18827" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1164,17671" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence sap:VirtualizedContainerService.HintSize="1164,18599" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="boolPostConditionExists" />
           </Sequence.Variables>
@@ -208,7 +208,7 @@
               </If.Then>
             </If>
           </Sequence>
-          <Sequence DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="1102,15200" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do Work" sap:VirtualizedContainerService.HintSize="1102,16128" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="boolPopUpExists" />
             </Sequence.Variables>
@@ -217,20 +217,20 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Input" sap:VirtualizedContainerService.HintSize="1040,15089" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Input" sap:VirtualizedContainerService.HintSize="1040,16017" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: TCS BαNCS" sap:VirtualizedContainerService.HintSize="978,14978" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="d0cb5dce-16d9-43d0-bdd6-0598bebcc130" Version="V1">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: TCS BαNCS" sap:VirtualizedContainerService.HintSize="978,15906" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="d0cb5dce-16d9-43d0-bdd6-0598bebcc130" Version="V1">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="944,14761" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="944,15689" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Name="dtCashList" />
                         <Variable x:TypeArguments="x:String" Name="strEventID" />
@@ -301,7 +301,7 @@
                           <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Sequence DisplayName="Check already authorized" sap:VirtualizedContainerService.HintSize="882,3180" sap2010:WorkflowViewState.IdRef="Sequence_134">
+                      <Sequence DisplayName="Check already authorized" sap:VirtualizedContainerService.HintSize="882,4108" sap2010:WorkflowViewState.IdRef="Sequence_134">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -315,7 +315,7 @@
                             <InArgument x:TypeArguments="x:String">[DiRow("Pay Date").ToString.Trim]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="618,541" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="618,290" sap2010:WorkflowViewState.IdRef="TryCatch_12">
                           <TryCatch.Try>
                             <Assign sap:VirtualizedContainerService.HintSize="262,62" sap2010:WorkflowViewState.IdRef="Assign_8">
                               <Assign.To>
@@ -327,10 +327,10 @@
                             </Assign>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="406,378" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_12">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -358,16 +358,44 @@
                             </Catch>
                           </TryCatch.Catches>
                         </TryCatch>
+                        <If Condition="[strUpdate.Chars(0) = &quot;0&quot;c]" DisplayName="Remove first 0 as not showin in Bancs" sap:VirtualizedContainerService.HintSize="618,451" sap2010:WorkflowViewState.IdRef="If_38">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,172" sap2010:WorkflowViewState.IdRef="Sequence_167">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[strUpdate]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[strUpdate.Substring(1)]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,103" sap2010:WorkflowViewState.IdRef="Sequence_168">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="618,92" sap2010:WorkflowViewState.IdRef="LogMessage_55" Message="[strUpdate]" />
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="618,184" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="618,870" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                           <TryCatch.Try>
                             <uix:NGetText DisplayName="Get Text 'Status'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="d0cb5dce-16d9-43d0-bdd6-0598bebcc130" TextString="[strStatus]" Version="V3">
                               <uix:NGetText.Target>
-                                <uix:TargetAnchorable BrowserURL="https://bancs.ad.utmostgroup.com/Bancs/tmc/TMC2000S.cado?method=TMC2000Q&amp;QLnk=Y&amp;basepopulate=yes&amp;module=tmc&amp;form=TMC_ProceedAction_ProceedForm&amp;name=EIC_DepotEventAction_DepotEventForm&amp;parentTab=3&amp;selectionList=0&amp;pageId=Proceed%20List&amp;wintitle=Proceed%20List&amp;availHeight=1040&amp;availWidth=1920&amp;tabid=4&amp;tabId=panel4" DesignTimeRectangle="709, 479, 87, 27" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'To Be Authorized'" FullSelectorArgument="&lt;webctrl id='panel4' tag='IFRAME' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' /&gt;&lt;webctrl class='DRFAlNm' tableCol='19' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='panel*' tag='IFRAME' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' /&gt;&lt;webctrl class='DRFAlNm' type='' tag='TD' /&gt;" Guid="a8d48c13-6908-4646-a5b2-26b55b16fac2" ImageBase64="" InformativeScreenshot="cfe68b1d135a9d664391e544aadec204.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TCS BαNCS' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                                <uix:TargetAnchorable BrowserURL="https://bancs.ad.utmostgroup.com/Bancs/tmc/TMC2000S.cado?method=TMC2000Q&amp;QLnk=Y&amp;basepopulate=yes&amp;module=tmc&amp;form=TMC_ProceedAction_ProceedForm&amp;name=EIC_DepotEventAction_DepotEventForm&amp;parentTab=8&amp;selectionList=0&amp;pageId=Proceed%20List&amp;wintitle=Proceed%20List&amp;availHeight=1040&amp;availWidth=1920&amp;tabid=9&amp;tabId=panel9" DesignTimeRectangle="634, 516, 87, 27" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'To Be Authorized'" FullSelectorArgument="&lt;webctrl tag='IFRAME' parentclass='bancs-tabs-panel bancs-tab-widget-content' uipath-html-title='panel*' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' parentclass='DRFDiv' /&gt;&lt;webctrl class='DRFAlNm' tag='TD' colName='Status' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' parentclass='bancs-tabs-panel bancs-tab-widget-content' uipath-html-title='panel*' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' parentclass='DRFDiv' /&gt;&lt;webctrl class='DRFAlNm' tag='TD' colName='Status' type='' /&gt;" Guid="2a1928fe-6ad4-45fe-8371-350d470f6dc4" InformativeScreenshot="dc21735d65e9c6931932074f5c5cc354.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TCS BαNCS' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                                      <uix:Target DesignTimeRectangle="709, 452, 87, 27" ElementType="Text" FriendlyName="'Status'" FullSelectorArgument="&lt;webctrl id='panel4' tag='IFRAME' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' /&gt;&lt;webctrl aaname='Status' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='panel*' tag='IFRAME' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' /&gt;&lt;webctrl aaname='Status' type='' tag='TH' class='DRFHeaderother' check:innerText='Status' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAfCAYAAACI/7HjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFOSURBVGhD7Zc9bsJAEIW3ytFyIC6Qs1CloA8tygVchs4tggJthagmHntsdta2xCrwJJM30ift4rEtvn3+C8KCVXj//BKCIcQYhWAIbx+bYaJj8lhSt5T9ZCgbCGUDoWwglA2EsoFQNhDKBlIse1Vf7eve6lR327ZHOV+Ossr6R9zb94KUyR6JqmR3ibKe3DYDZbfj+2SLyXWodEu6lqa97b3Vua4m+9YnkX1lx3ELUcve2rS6/fvzLZMy2UoV7e93NS0qI12krG9Ott6uXkFwSrlshyb1KrttMx7J9smUQtn+KrBz2D5LpUx2k2qftnnZTmIrfl72cEy9atyCGfp7/yBeMGWyR2lNhSZJVDHZ7WZIdt6n8m0qzcL1C+Hfev5jssmfoGwglA2EsoFQNhDKBkLZQCgbCGUDcbL7CXk+lA0kfP8chomOyWO5uT3IL5s4ZZ8qRhzcAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
-                                      <uix:Target DesignTimeRectangle="1593, 477, 71, 31" ElementType="Text" FriendlyName="'29 Nov 2024'" FullSelectorArgument="&lt;webctrl id='panel4' tag='IFRAME' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' /&gt;&lt;webctrl class='DRFTemp' tableCol='29' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='panel*' tag='IFRAME' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' /&gt;&lt;webctrl class='DRFTemp' type='' aaname='{0}' tag='TD' check:innerText='{0}' /&gt;&quot;, strPayDate)]" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAfCAYAAAC1bdCFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVGhD7ZQxboQwEEVd5RhIK3ESOipOsj1dpG25AQdYCeUKW6XdA+QKaTmBYw8Yzxj7h6zSMSs9CXttz/cz2Ly9f9h5ngn/fHa4CxMayh6VAzCfX99bwz+fHe5C5SSoHIDKAagcgMoBqByAygGoHACWM3bWGLPRjGHi014vsb/qn2u/ZOrrZN7dNqazQzLuJYrZYl2ivef7TW2vjziHeNxsxdaCcqa+iwv4MJebnai/ZkIWUTxcgMa1na3Wef8pp5SNNrjV89mihMFlCbVJFBO3ZHN52V6gHAErKuXs22n/0IaCUo7vT084De3HlN7MjReykdCtTjzgmPWwHHkCyybZxhxIDo2n8EwOP21HXqCUmUdmOyaHr7uICWP+KMcvlPk+GXxBDg/mn5sxhkKbCOvlN8bZZ0PrEnSvMOHrPcMP2uPrYzl06f1ycmCMDOY24k54C1Z8cxz0mXRuPKhdqss+sdxbxWvmOPzm+IHSaCjkTyz0lTeQO0U+XqwvLsf1v6SPU84W6qz9yb0i5+yzH5ZzdlQOQOUAVA5A5QBUDkDlAFQOQOUAhJzQUPaoHICx7hca+uMurP0BuHEUch6bc7MAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="634, 489, 87, 27" ElementType="Text" FriendlyName="'Status'" FullSelectorArgument="&lt;webctrl tag='IFRAME' parentclass='bancs-tabs-panel bancs-tab-widget-content' uipath-html-title='panel*' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' parentclass='DRFDiv' /&gt;&lt;webctrl aaname='Status' tableRow='1' tag='TH' colName='Status' parentclass='DRFheader' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IFRAME' parentclass='bancs-tabs-panel bancs-tab-widget-content' uipath-html-title='panel*' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' parentclass='DRFDiv' /&gt;&lt;webctrl aaname='Status' type='' tag='TH' colName='Status' parentclass='DRFheader' class='DRFHeaderother' check:text='Status' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAfCAYAAACI/7HjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHbSURBVGhD7Zq/asJQFIfvQ+iiS3F2cC64WwTfQLrkBboI6iLO3Qqd9AGcHdrNB+hQ6NiOhS7SwaHzac7Nv19u1aSSE0g4w4/jzT1J4PO7x0Xz9f1DmnJinl8+SVNOzOFwIE05Mffbj3ix3LwRr7UWV5FtCjZ/1hQbZKtmC1dkq2YLB9mq2cIV2arZwkG2arZwRbZqtnCQrZotXJFtLrNnXoeMMUn663BvTT0zJM/p/5PVnJrtOc2O7dU8yDbbbB9UozWxoILrO7ppDSzg5ebRwh4fuw/rw8TCvsvqq2FFttlms5Un7PX6YDuba3uTa01v5/ftaNSGPj4ViyGcDt7v0Gh14pnwvioG2eab2dNBAsBPdxrtnzGbT4QJT4BrNj/Phx3080m5srDreAKQba6ZnQ6a6M5sXoOZ0Z47s8+Yjb8PwckI76lokG222T6Yxu0TXAcTHbPH14Z6i6hvTd1zZsdr7oueF+6796euV6si2xxmu7YGQKP9eMayuWxsqjeyHua2NRrneMf/IkKzj8785F1VDLLNN7O1XlyR7QUzW/OfIFs1W7giWzVbOMhWzRauyFbNFg6yVbOFK7JVs4WDbNVs4Yps9R9RJUZhlxjz+r6PF/xZU2wStnv6BZMZ1PC7rfHuAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                                      <uix:Target DesignTimeRectangle="1589, 516, 70, 27" ElementType="Text" FriendlyName="'31 Dec 2024'" FullSelectorArgument="&lt;webctrl tag='IFRAME' parentclass='bancs-tabs-panel bancs-tab-widget-content' uipath-html-title='panel*' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' parentclass='DRFDiv' /&gt;&lt;webctrl class='DRFTemp' tag='TD' aaname='31 Dec 2024' colName='Pay Date' parentclass='DRFsel' /&gt;" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl tag='IFRAME' parentclass='bancs-tabs-panel bancs-tab-widget-content' uipath-html-title='panel*' /&gt;&lt;webctrl class='sortable' parentid='DRF_list1' tag='TABLE' parentclass='DRFDiv' /&gt;&lt;webctrl class='DRFTemp' tag='TD' aaname='{0}' colName='Pay Date' parentclass='DRFsel' type='' check:text='{0}' /&gt;&quot;, strUpdate)]" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAfCAYAAABar7u7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVGhD7ZQxbsMwDEV1lCLIXQx48mEyeQwydvSYA6Rz4TU3CAJ0bI/QySdQTVmyPiUxdtpupoGHWLJEkU9EzPHtww7D4KD31/evzf6iBxMGCkfFCJj75/c8oPctgx5UDKBiBFSMgIoRUDECKkZAxQioGIEHYm72sDPWGM/uZHvYOH3f28MV5zhdDfuJ+lJc9zTnhsWtzsI3yLlv97CnlLev1+f4QMzFVlAIFfnS3qbxfPiyGEzaJZcJfp6+beK5lMscc8zZNLbz6/D8ro7zLo/kklx940WvEBM3BZvsZlZ2TL4Hkw03CNKT+cUuu57GgrwYkoTr07EwP4uC+UUxoQUx8YnfiIlzFDfGjLFKtymT5LBKDO8qd15B7KKYAC+E+FvHsK7whPlUZhkqMDl/SQx1F0gJ+aR50B5ZzBikAhH/IQZvJ48Ha7JbTqCCWYEB+T8Gz+Z7gHUdQ4eARQzqEoNvQiFZVyTr+PcgObnFQuwsLnYO5jbnXOqMgth1YpJNG0PFCKgYARUjoGIEVIyAihFQMQIqRoCJCQOFY6w+xUfFFB9rfwAJ7GLXp2gkHgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
@@ -375,10 +403,10 @@
                             </uix:NGetText>
                           </TryCatch.Try>
                           <TryCatch.Catches>
-                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="406,707" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
