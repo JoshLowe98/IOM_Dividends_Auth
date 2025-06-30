@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1131,5594</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>914,5474</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="112">
@@ -424,8 +424,9 @@
                         <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="[strUsername]" Body="[mailMessage.Body]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="338,149" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[mailMessage.Subject]" To="[DiConfig(&quot;Email Notification Confirmation&quot;).ToString.Trim]">
                           <ui:SendOutlookMail.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                              <InArgument x:TypeArguments="x:String">[DtReports(0).Item("RootFilePath").ToString+DtReports(0).Item("FileName").ToString+DtReports(0).Item("FileType").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String">[DtReports(14).Item("RootFilePath").ToString+DtReports(14).Item("FileName").ToString+DtReports(14).Item("FileType").ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String">
+                                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DtReports(0).Item(&quot;RootFilePath&quot;).ToString+DtReports(0).Item(&quot;FileName&quot;).ToString+DtReports(0).Item(&quot;FileType&quot;).ToString" />
+                              </InArgument>
                             </scg:List>
                           </ui:SendOutlookMail.Files>
                         </ui:SendOutlookMail>
